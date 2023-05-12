@@ -1,10 +1,11 @@
 <h6 class="container">Add To-dos here</h6>
-<div class="m-4 container">
+<div class="container">
     <form (ngSubmit)="onSubmit()" >
-        <div class="mb-3">
+        <div class="m-3 mx-0">
           <label for="title" class="form-label">Todo Title</label>
-          <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title" >
+          <input type="text" [(ngModel)]="title" name="title"  class="form-control" id="title">
         </div>
+      
         <div class="mb-3">
             <label for="desc" class="form-label">Todo Description</label>
             <input type="text" [(ngModel)]="desc" class="form-control" name="desc" id="desc" >
@@ -13,4 +14,5 @@
         <button type="submit clear" class="btn btn-success">Add Todo</button>
       </form>
 </div>
+<router-outlet></router-outlet>
 
